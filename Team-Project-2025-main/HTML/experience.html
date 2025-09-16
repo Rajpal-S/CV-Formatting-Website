@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/CVsectionstyle.css">
+    <link rel="stylesheet" href="../CSS/progress.css">
+    <script src="../Js/script.js" defer></script>
+    <title>Experience</title>
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+         
+            <div class="containerHeader1">
+                <a href="../HTML/homePage.html" class="home">  &#8962; <span class="span1">Home</span></a>
+                
+            </div>
+
+            <!-- <button id="clearButton"><span class="bin">&#128465;</span> Clear all Data</button> -->
+
+            <div class="containerHeader2">
+             CV builder
+            </div>  
+        </div>
+    </header>
+
+    <main>
+        <!-- progress bar -->
+        <div class="progress-container">
+            <div id="circle1">1</div><span id="text1"> Your details —</span>
+            <div id="circle2">2</div><span id="text2"> Choose template —</span>
+            <div id="circle3">3</div><span id="text3"> Download CV</span>
+        </div>
+
+        <div class="exp-form" id="exp-form">
+            <input type="text" id="compName" placeholder="Company Name...">
+
+            <label for="jobStartDate">Start Date:</label>
+            <input type="date" id="jobStartDate">
+            <label for="jobEndDate">End Date:</label>
+            <input type="date" id="jobEndDate">
+
+            <input type="text" id="jobTitle" placeholder="Software Developer...">
+            <textarea id="jobDescription" placeholder="Job Description..."></textarea>
+
+            <button class="Add" id="submit-Exp" 
+            onclick="createExperienceArray();">Add</button>
+        </div>
+        <div id="exp-list">
+            <!-- list of exp will be added into this area :)-->
+        </div>
+        <script src="../Js/expScript.js"></script>
+    </main>
+    <footer>
+        <div class="finish-button" id="finish-Exp"><button type="button" 
+        onclick="nextPage('extraCurricular.html');">Finish?</button></div>
+    </footer>
+</body>
+</html>

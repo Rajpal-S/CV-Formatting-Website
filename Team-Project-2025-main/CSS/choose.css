@@ -1,0 +1,229 @@
+body {
+    background-color: #39343F;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  header {
+    background-color: #39818b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .containerHeader {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+  }
+  .containerHeader1  {
+ font-size: x-large;
+
+  }
+
+  .home {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .home:hover {
+    transform: translateY(-5px);
+  }
+
+  .containerHeader2 {
+    font-size: large;
+    
+  }
+ .span1{
+    color: white;
+    font-size: small;
+ }
+
+  .span2{
+      color: #39818b;
+  }
+
+ .container{
+    margin:20%;
+    margin-top: 2%;
+ }
+ .container-1{
+    margin:10%;
+    margin-top: 0;
+  
+ }
+
+
+
+ #template {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 20px; /* Adds space between grid items */
+    text-align: center;
+    padding: 0;
+}
+
+.bin{
+  font-size: x-large;
+}
+
+
+button{
+    text-decoration: none;
+    color: white;
+    background-color: #39818b;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    width: 20%;
+    height: 10%;
+    transition: background-color 0.2s ease;
+}
+
+button:hover{
+    background-color: #51b2be;
+}
+
+.go{
+    text-decoration: none;
+    color: white;
+    background-color: #39818b;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+   
+}
+.go:hover{
+  background-color: #51b2be;
+}
+
+.temp1{
+    padding: 40px;
+    background-color: #232429;
+    border-radius: 10px;
+}
+
+img{
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+
+    margin: 0;
+}
+
+.hiddenPic-container-left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hiddenPic-container-right{
+  display: flex;
+}
+/* hides images until triggered in js */
+#hiddenPic1{
+    float: right;
+    display: none;
+    position: fixed;
+    height: 80%;
+    width: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#hiddenPic2{
+    float:left;
+    display: none;
+    position:fixed;
+    height: 80%;
+    width: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#hiddenPic3{
+  float: right;
+  display: none;
+  position: fixed;
+  height: 80%;
+  width: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#hiddenPic4{
+  float:left;
+  display: none;
+  position:fixed;
+  height: 80%;
+  width: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* this is for the progtress indicator */
+.progress-container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 2.5%;
+}
+
+#circle1 {
+  color: rgb(186, 179, 179);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #869091;
+  position: relative;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#circle2 {
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #39818b;
+  position: relative;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#circle3 {
+  color:rgb(186, 179, 179);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:#869091 ;
+  position: relative;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text1{
+  font-weight: normal;
+  color: rgb(186, 179, 179);
+}
+#text2{
+  font-weight: normal;
+  color: white;
+}
+#text3{
+  font-weight: normal;
+  color:rgb(186, 179, 179) ;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="../CSS/CVsectionstyle.css">
+    <link rel="stylesheet" href="../CSS/progress.css">
+    <script src="../Js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+         
+            <div class="containerHeader1">
+                <a href="../HTML/homePage.html" class="home">  &#8962; <span class="span1">Home</span></a>
+                
+            </div>
+
+            <!-- <button id="clearButton"><span class="bin">&#128465;</span> Clear all Data</button> -->
+
+            <div class="containerHeader2">
+             CV builder
+            </div>  
+        </div>
+    </header>
+
+    <!-- progress bar -->
+    <div class="progress-container">
+        <div id="circle1">1</div><span id="text1"> Your details —</span>
+        <div id="circle2">2</div><span id="text2"> Choose template —</span>
+        <div id="circle3">3</div><span id="text3"> Download CV</span>
+    </div>
+    
+    <form>
+        <label for="institutionName">Institution</label><br/>
+        <input type="text" id="institutionName" class="educationInputFields"/><br/>
+
+        <label for="startDate">Start Date</label><br/>
+        <input type="date" id="startDate" class="educationInputFields"/><br/>
+
+        <label for="endDate">End Date</label><br/>
+        <input type="date" id="endDate" class="educationInputFields"/><br/>
+
+        <label for="qualificationName">Qualification Name</label>
+        <input type="text" id="qualificationName" class="educationInputFields"/><br/>
+
+        <label for="grade">Grade Achieved</label><br/>
+        <input type="text" id="grade" class="educationInputFields" maxlength="3"/><br/>
+
+        <button id="submit-qualification">Add Qualification</button>
+        <br/>
+
+        <button id="submit-Edu">Add New Institution</button>
+        <script src="../Js/eduscript.js"></script>
+    </form>
+    <footer>
+        <div class="finish-button"><button type="button" onclick="nextPage('experience.html');">Finish</button></div>
+    </footer>   
+</body>
+</html>

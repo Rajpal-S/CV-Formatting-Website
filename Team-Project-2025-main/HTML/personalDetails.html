@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalDetails</title>
+    <link rel="stylesheet" href="../CSS/CVsectionstyle.css">
+    <link rel="stylesheet" href="../CSS/progress.css">
+    <script src="../Js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+         
+            <div class="containerHeader1">
+                <a href="../HTML/homePage.html" class="home">  &#8962; <span class="span1">Home</span></a>
+                
+            </div>
+
+            <!-- <button id="clearButton"><span class="bin">&#128465;</span> Clear all Data</button> -->
+
+            <div class="containerHeader2">
+             CV builder
+            </div>  
+        </div>
+    </header>
+
+   <!-- progress bar -->
+   <div class=" progress-container">
+    <div id="circle1">1</div><span id="text1"> Your details —</span>
+    <div id="circle2">2</div><span id="text2"> Choose template —</span>
+    <div id="circle3">3</div><span id="text3"> Download CV</span>
+    </div>
+
+    <form >
+       <!-- below is the form input to collect user information -->
+        <label for="fname" id="fname">Full Name</label><br/>
+        <!-- input type text use to take the name of the user with  an id fullName -->
+        <input type="text" id="fullName"/><br/>
+        <label for="phoneNumber" id="pNumber" >Phone Number</label><br/>
+         <!-- input type number use to take the phoneNumber of the user with  an id phoneNumber -->
+        <input  maxlength="11" type ="pin" id="phoneNumber" /><br/>
+        <label for="email" id="email">Email</label><br/>
+         <!-- input type email use to take the email of the user with  an id emailData-->
+        <input type="email" id="emailData" placeholder="eg. Daniel10@gmail.com"/><br/>     
+    </form>
+    
+    <!-- This button saves the personal  Details of the user and navigate the user to the experience page -->
+    <button onclick=
+    "Submit('education.html');
+    saveCVData('name', document.getElementById('fullName').value); 
+    saveCVData('number', document.getElementById('phoneNumber').value);
+    saveCVData('email', document.getElementById('emailData').value);
+    ">Next</button>   
+</body>
+</html>

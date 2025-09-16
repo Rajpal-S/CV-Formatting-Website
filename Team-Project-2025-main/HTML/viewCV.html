@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final CV</title>
+    <link rel="stylesheet" href="../CSS/viewCV.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="../Js/script.js" defer></script>
+    <style>
+        .header-container1 {
+            display: flex;
+            justify-content: space-between; /* Places divs on left and right */
+            align-items: center; /* Aligns them vertically */
+        }
+
+        .left1 {
+            text-align: left;
+            font-size: 1.5em;
+           
+        }
+
+        .right1 {
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        .container-cv {
+            word-wrap: break-word; /* Ensures long words break to the next line */
+            overflow-wrap: break-word; /* Ensures long words break to the next line */
+        }
+
+        strong{
+            font-weight: lighter;
+            font-family: 'Aptos', sans-serif;
+        }
+        .name1 {
+            font-family: 'Aptos', sans-serif;
+            font-weight:normal;
+        }
+        hr {
+            border: none;
+            height: 0.1px;
+            /* Set the hr color */
+            color: #333; /* old IE */
+            background-color: #585656; /* Modern Browsers */
+        }
+    </style>
+</head>
+<body onload="loadCVData()">
+    <!-- progress bar -->
+    <div class="progress-container">
+        <div id="circle1">1</div><span id="text1"> Your details —</span>
+        <div id="circle2">2</div><span id="text2"> Choose template —</span>
+        <div id="circle3">3</div><span id="text3"> Download CV</span>
+    </div>
+
+    <div class="container-cv" id="cv-content">
+        <div class="header-container1" >
+            <div class="left1">
+                <h1><span id="nameDisplay" class="name1"></span></h1>
+            </div>
+            <div class="right1">
+                <p><span id="numberDisplay"></span></p>
+                <p><span id="emailDisplay"></span></p>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p><strong class="h">Work experience</strong></p>
+        <hr style="border: solid 1.5px;"/>
+        <br/>
+        <span id="experienceDisplay"></span>
+        <br/>
+        <p><strong class="h">Education</strong></p>
+        <hr style="border: solid 1.5px;"/>
+        <br/>
+        <span id="educationDisplay"></span>
+        <br/>
+        <p><strong class="h">Extracurricular</strong></p>
+        <hr style="border: solid 1.5px;"/>
+        <br/>
+        <span id="extracurricularDisplay"></span>
+        <br/>
+    </div>
+    <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+</body>
+</html>

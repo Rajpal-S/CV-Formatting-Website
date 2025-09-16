@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="edustyle.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <form>
+        <div style="display:grid; align-content:center;padding: 14px;background-color:azure;width: 25%;justify-content:space-between">
+            <label for="institutionName">Institution</label><br/>
+            <input type="text" id="institutionName"/><br/>
+
+            <label for="startDate" >Start Date</label><br/>
+            <input type="date" id="startDate"/><br/>
+
+            <label for="endDate" >End Date</label><br/>
+            <input type="date" id="endDate"/><br/>
+
+            <label for="qualificationName">Qualification Name</label>
+            <input type="text" id="qualificationName"/><br/>
+
+            <label for="grade">Grade Acheived</label><br/>
+            <input type="text" id="grade" maxlength="3"/><br/>
+
+            <button id="submit-qualification">Add Qualification</button>
+              <br/--> 
+
+            <button id="submit-Edu">Add</button>
+        </div>
+        <script src="eduScript.js"></script>
+    </form>
+    <footer>
+        <div class="finish-button"><button onclick= "nextPage('experience.html');">Finish</button></div>
+    </footer>   
+</body>
+</html>

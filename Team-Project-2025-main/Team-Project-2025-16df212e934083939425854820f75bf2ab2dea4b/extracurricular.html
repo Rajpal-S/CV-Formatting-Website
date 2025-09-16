@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra-Curricular</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <form>
+        <label for="Activity">Activity</label>
+        <input type="text" id="Activity" name="Activity" placeholder="Football" required>
+        <label for="Description" size="50">Description</label>
+        <input type="text" id="Description" placeholder="A short Description" required>
+        <label for="Duration">Duration</label>
+        <input type="text" id="Duration" placeholder="2 years" required>
+    </form>
+
+    <footer>
+        <div class="finish-button">
+            <button onclick="
+               saveCVData('Activity', document.getElementById('Activity').value);
+               saveCVData('Description', document.getElementById('Description').value);
+               saveCVData('Duration', document.getElementById('Duration').value);
+               nextPage('viewCV.html');
+               ">Finish</button>
+        </div>
+    </footer>
+</body>
+
+</html>

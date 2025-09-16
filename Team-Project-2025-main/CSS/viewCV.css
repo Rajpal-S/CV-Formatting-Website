@@ -1,0 +1,324 @@
+/* CSS Variables for scaling */
+:root {
+    --content-scale: 1;
+    --font-size: 1em;
+    --line-height: 1.2em;
+}
+
+/* only to format the CV */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #39343F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container-cv {  
+    padding: calc(30px * var(--content-scale));
+    background-color: white;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    transform-origin: top left;
+    transform: scale(var(--content-scale));
+    overflow: hidden;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color: #333;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.name {
+    font-size: calc(48px * var(--content-scale));
+    font-weight: lighter;
+    margin-bottom: calc(20px * var(--content-scale));
+    color: rgb(58, 58, 58);
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    display: block;
+}
+
+.detail {
+    text-align: center;
+    margin: calc(20px * var(--content-scale)) 0;
+}
+
+.h2 {
+    font-size: calc(x-large * var(--content-scale));
+    display: block;
+    text-align: left;
+    margin: calc(20px * var(--content-scale)) 0 calc(10px * var(--content-scale)) 0;
+    font-family: 'Lucida Console', monospace;
+    text-align: center;
+}
+
+#experienceDisplay,
+#educationDisplay,
+#extracurricularDisplay {
+    white-space: pre-line;
+    width: 100%;
+    padding: 0 calc(15px * var(--content-scale));
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.experience-entry,
+.education-entry,
+.extracurricular-entry {
+    margin: calc(15px * var(--content-scale)) 0;
+    position: relative;
+    padding-right: calc(100px * var(--content-scale));
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.date-range,
+.duration {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #666;
+    font-style: italic;
+}
+
+.qualification-entry,
+.job-title,
+.job-description,
+.activity-description {
+    margin-left: calc(20px * var(--content-scale));
+    margin-top: calc(5px * var(--content-scale));
+    color: #666;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: calc(100% - (120px * var(--content-scale)));
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+    
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+    }
+    
+    .progress-container {
+        display: none !important;
+    }
+    
+    .container-cv {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        box-shadow: none !important;
+        transform: none !important;
+        position: static !important;
+        overflow: visible !important;
+        background: white !important;
+    }
+
+    /* Reset all transforms and scaling */
+    * {
+        transform: none !important;
+        --content-scale: 1 !important;
+    }
+
+    /* Ensure text colors are visible */
+    h1, h2, p, strong, .name1, .h {
+        color: black !important;
+    }
+
+    /* Hide non-essential elements */
+    .download-btn,
+    .circle1,
+    .circle2,
+    .circle3,
+    .text1,
+    .text2,
+    .text3 {
+        display: none !important;
+    }
+
+    /* Ensure proper text sizing */
+    .name1 {
+        font-size: 24pt !important;
+    }
+
+    .h {
+        font-size: 14pt !important;
+    }
+
+    p, span {
+        font-size: 12pt !important;
+    }
+}
+
+/* classes are in js for education */
+#educationDisplay {
+    white-space: pre-line;
+    width: 100%;
+}
+.education-entry {
+    margin-bottom: 20px;
+    position: relative;
+    padding-right: 100px;  /* match the other entries */
+    margin: 15px 0;  /* match the other entries */
+}
+.date-range {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.qualification-entry {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+strong {
+    color: #333;
+}
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ /* end education */
+
+ /* second tamplate styling */
+ .name1{
+    font-size: 50px;
+}
+
+.h{
+    font-size:large;
+}
+
+.download-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3
+}
+
+/* Extracurricular Activities Styling */
+#extracurricularDisplay {
+    white-space: pre-line;
+    width: 100%;
+}
+
+.extracurricular-entry {
+    margin: 15px 0;
+    position: relative;
+    padding-right: 100px;
+    border-radius: 8px;
+}
+
+.duration {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+.activity-description {
+    margin-left: 40px;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+/* this is for the progtress indicator */
+.progress-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 2.5%;
+}
+
+#circle1 {
+    color: rgb(186, 179, 179);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #869091;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle2 {
+    color: rgb(186, 179, 179);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #869091;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle3 {
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #39818b;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text1{
+    font-weight: normal;
+    color: rgb(186, 179, 179);
+}
+#text2{
+    font-weight: normal;
+    color: rgb(186, 179, 179);
+}
+#text3{
+    font-weight: normal;
+    color: white;
+}

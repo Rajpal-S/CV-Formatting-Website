@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final CV 2</title>
+    <link rel="stylesheet" href="../CSS/viewCV.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="../Js/script.js" defer></script>
+    <style>
+        .container-cv {
+            word-wrap: break-word; /* Ensures long words break to the next line */
+            overflow-wrap: break-word; /* Ensures long words break to the next line */
+        }
+    </style>
+</head>
+<body onload="loadCVData()">
+    <!-- progress bar -->
+    <div class="progress-container">
+        <div id="circle1">1</div><span id="text1"> Your details —</span>
+        <div id="circle2">2</div><span id="text2"> Choose template —</span>
+        <div id="circle3">3</div><span id="text3"> Download CV</span>
+    </div>
+
+    <div class="container-cv" id="cv-content">
+        <h1><span id="nameDisplay" class="name"></span></h1>
+        <hr/>
+        <div class="detail">
+            <p><strong>phone:</strong> <span id="numberDisplay"></span>     <strong>email:</strong> <span id="emailDisplay"></span></p>
+        </div>
+        <hr/>
+        <p><strong class="h2">Experience</br> </strong> <span id="experienceDisplay"></span></p>
+        <br/>
+        <hr/>
+        <p><strong class="h2">Education</br> </strong> <span id="educationDisplay"></span></p>
+        <br/>
+        <hr/>
+        <p><strong class="h2">Extracurricular</br> </strong> <span id="extracurricularDisplay"></span></p>
+        <br/>
+    </div>
+    <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+</body>
+</html>

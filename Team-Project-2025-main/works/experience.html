@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CVsectionstyle.css">
+    <script src="script.js" defer></script>
+    <title>Experience</title>
+    
+
+</head>
+<body>
+    <main>
+        <div class="exp-form" id="exp-form">
+            <input type="text" id="compName" placeholder="Company Name...">
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+
+            <input type="text" id="roleDesc" placeholder="Job role...">
+            <button id="submit-Exp" onclick="createEducationArray()">Add</button>
+        </div>
+        <div class="exp-list" id="exp-list">
+            <!-- list of exp will be added into this area :)-->
+        </div>
+        <script src="expScript.js"></script>
+    </main>
+    <footer>
+        <div class="finish-button"><button onclick= "nextPage('extraCurricular.html');">Finish?</button></div>
+    </footer>
+    
+</body>
+</html>

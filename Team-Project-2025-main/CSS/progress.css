@@ -1,0 +1,91 @@
+header {
+    background-color: #39818b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .containerHeader {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+  }
+  .containerHeader1  {
+ font-size: x-large;
+
+  }
+
+  .home {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .home:hover {
+    transform: translateY(-5px);
+  }
+
+  .span1{
+    color: white;
+    font-size: small;
+ }
+
+
+.progress-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 2.5%;
+}
+
+#circle1 {
+    color: (186, 179, 179);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #39818b;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle2 {
+    color: rgb(186, 179, 179);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #869091;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle3 {
+    color: rgb(186, 179, 179);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #869091;
+    position: relative;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text1{
+    font-weight: normal;
+    color: white;
+}
+#text2{
+    font-weight: normal;
+    color: rgb(186, 179, 179);
+}
+#text3{
+    font-weight: normal;
+    color: rgb(186, 179, 179);
+}
